@@ -13,6 +13,8 @@ import { AppRoutes } from './app.routing';
 
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
 import { ClienteService } from "./shared/service/cliente.service";
+import { CrearClienteModule } from "./pages/clients/crear-cliente.module";
+import { MatTabsModule } from "@angular/material/tabs";
 
 
 @NgModule({
@@ -26,10 +28,12 @@ import { ClienteService } from "./shared/service/cliente.service";
       useHash: true
     }),
     SidebarModule,
+    CrearClienteModule,
+    MatTabsModule,
     NavbarModule,
     ToastrModule.forRoot(),
     FooterModule,
-    FixedPluginModule
+    FixedPluginModule,
   ],
   providers: [ClienteService],
   bootstrap: [AppComponent]
