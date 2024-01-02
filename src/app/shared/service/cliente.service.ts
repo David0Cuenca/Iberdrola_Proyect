@@ -6,12 +6,14 @@ import { Cliente } from 'app/interfaces/cliente';
 @Injectable({
   providedIn: 'root'
 })
+
 export class ClienteService {
   private apiUrl = 'http://localhost:8080/api/clientes'; // Reemplaza con la URL de tu API
 
   constructor(private http: HttpClient) {}
 
   // Método para crear un cliente
+  
   crearCliente(cliente: Cliente): Observable<Cliente> {
     return this.http.post<Cliente>(this.apiUrl, cliente);
   }

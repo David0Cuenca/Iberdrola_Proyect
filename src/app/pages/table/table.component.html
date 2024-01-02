@@ -13,7 +13,15 @@
             <th>Domicilio</th>
             <th>Fecha de nacimiento</th>
           </thead>
-          <tbody></tbody>
+          <tbody>
+            <tr *ngFor="let user of users">
+              <td>{{ user.dni }}</td>
+              <td>{{ user.nombre }}</td>
+              <td>{{ user.apellidos }}</td>
+              <td>{{ user.domicilio }}</td>
+              <td>{{ user.nacimiento | date }}</td>
+            </tr>
+          </tbody>
         </table>
       </div>
     </div>

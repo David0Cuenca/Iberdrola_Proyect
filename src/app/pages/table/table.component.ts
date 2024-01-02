@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
 import { Cliente } from '../../interfaces/cliente';
+import { ClienteService } from 'app/shared/service/cliente.service';
+import { error } from 'console';
 
 @Component({
     selector: 'table-cmp',
@@ -9,14 +11,20 @@ import { Cliente } from '../../interfaces/cliente';
 })
 
 export class TableComponent implements OnInit{
-    public tableData1: Cliente;
-    ngOnInit(){
-        this.tableData1 = {
-            dni : '1' ,
-            nombre: 'Juan',
-            apellidos: 'Perez',
-            domicilio: 'Calle falsa 123',
-            nacimiento: new Date(2023,12,4)
-        };
+    
+    public users: any[]=[];
+    constructor(private clienteservice: ClienteService){}
+
+    ngOnInit(): void {
+        this.clienteservice.obtenerClientes().subscribe(
+            (data) => {
+                this.users = data;
+            },
+            (error) => {
+                console.error('Error al obtener usuarios: ', error)
+            }
+        )
+        
     }
+
 }
