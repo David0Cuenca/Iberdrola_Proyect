@@ -1,9 +1,15 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'component-delete-client',
+  selector: 'components-delete-client',
   templateUrl: './delete-client.component.html',
+  styleUrls: ['./delete-client.component.scss']
 })
-export class AddClientComponent {
-  // Lógica del componente para añadir clientes
+export class DeleteClientComponent implements OnInit {
+
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+
 }

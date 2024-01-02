@@ -1,9 +1,15 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'component-edit-client',
+  selector: 'components-edit-client',
   templateUrl: './edit-client.component.html',
+  styleUrls: ['./edit-client.component.scss']
 })
-export class AddClientComponent {
-  // Lógica del componente para añadir clientes
+export class EditClientComponent implements OnInit {
+
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+
 }

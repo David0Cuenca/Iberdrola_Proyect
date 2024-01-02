@@ -13,23 +13,27 @@ import { AppRoutes } from './app.routing';
 
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
 import { ClienteService } from "./shared/service/cliente.service";
-import { CrearClienteModule } from "./pages/clients/crear-cliente.module";
-import { MatTabsModule } from "@angular/material/tabs";
+import { ShowClientComponent } from './components/show-client/show-client.component';
+import { DeleteClientComponent } from './components/delete-client/delete-client.component';
+import { EditClientComponent } from './components/edit-client/edit-client.component';
+import { AddClientComponent } from "./components/add-client/add-client.component";
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
     AdminLayoutComponent,
-  ],
+    AddClientComponent,
+    ShowClientComponent,
+    DeleteClientComponent,
+    EditClientComponent],
   imports: [
     BrowserAnimationsModule,
     RouterModule.forRoot(AppRoutes,{
       useHash: true
     }),
     SidebarModule,
-    CrearClienteModule,
-    MatTabsModule,
     NavbarModule,
     ToastrModule.forRoot(),
     FooterModule,

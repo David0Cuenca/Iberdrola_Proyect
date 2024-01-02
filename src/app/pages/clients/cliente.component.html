@@ -1,0 +1,107 @@
+<!-- <form [formGroup]="clienteForm" (ngSubmit)="enviarFormulario()">
+  <label for="dni">DNI:</label>
+  <input type="text" id="dni" formControlName="dni" />
+  <div *ngIf="clienteForm.get('dni').hasError('required')">
+    DNI es obligatorio
+  </div>
+  <div *ngIf="clienteForm.get('dni').hasError('pattern')">
+    DNI debe tener 8 o 9 dígitos
+  </div>
+
+Repite el patrón para otros campos (nombre, nacimiento, domicilio) 
+
+  <button type="submit" [disabled]="clienteForm.invalid">
+    Crear Cliente
+  </button>
+</form> -->
+
+<!-- app.component.html -->
+<mat-tab-group mat-stretch-tabs color="primary">
+  <mat-tab label="Añadir Usuario" >
+    <ng-template matTabContent>
+      <div class="container-fluid">
+        <div class="card card-user">
+          <div class="card-header">
+            <h5 class="card-title">Añadir Usuario</h5>
+          </div>
+          <div class="card-body">
+            <form>
+              <div class="row">
+                <div class="col-md-5 pr-1">
+                  <div class="form-group">
+                    <label>DNI</label>
+                    <input
+                      id="dni"
+                      type="text"
+                      class="form-control"
+                      placeholder="DNI"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-3 px-1">
+                  <div class="form-group">
+                    <label>Nombre</label>
+                    <input
+                      id="nombre"
+                      type="text"
+                      class="form-control"
+                      placeholder="Nombre"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-4 pl-1">
+                  <div class="form-group">
+                    <label>Apellidos</label>
+                    <input
+                      id="apellidos"
+                      type="text"
+                      class="form-control"
+                      placeholder="Apellidos"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label>Direccion</label>
+                    <input
+                      id="direccion"
+                      type="text"
+                      class="form-control"
+                      placeholder="Direccion"
+                      value="Melbourne, Australia"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label>Fecha de nacimiento</label>
+                    <input
+                      id="fecha"
+                      type="date"
+                      class="form-control"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="update ml-auto mr-auto">
+                  <button type="submit" class="btn btn-primary btn-round">
+                    Añadir Usuario
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </ng-template>
+  </mat-tab>
+  <mat-tab label="Editar usuario">
+    <ng-template matTabContent> Content 2 </ng-template>
+  </mat-tab>
+  <mat-tab label="Third">
+    <ng-template matTabContent> Content 3 </ng-template>
+  </mat-tab>
+</mat-tab-group>

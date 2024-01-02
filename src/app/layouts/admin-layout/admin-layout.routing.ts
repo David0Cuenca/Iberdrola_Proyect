@@ -6,11 +6,11 @@ import { TypographyComponent } from '../../pages/typography/typography.component
 import { IconsComponent } from '../../pages/icons/icons.component';
 import { MapsComponent } from '../../pages/maps/maps.component';
 import { NotificationsComponent } from '../../pages/notifications/notifications.component';
-import { CrearClienteComponent } from 'app/pages/clients/crear-cliente.component';
+import { ClienteComponent } from 'app/pages/clients/cliente.component';
 
 export const AdminLayoutRoutes: Routes = [
     { path: 'dashboard',      component: DashboardComponent },
-    { path: 'cliente',        component: CrearClienteComponent },
+    { path: 'cliente',        component: ClienteComponent },
     { path: 'table',          component: TableComponent },
     { path: 'typography',     component: TypographyComponent },
     { path: 'icons',          component: IconsComponent },

@@ -22,4 +22,6 @@ export class ClienteService {
   obtenerClientes(): Observable<Cliente[]> {
     return this.http.get<Cliente[]>(this.apiUrl);
   }
+
+  
 }
