@@ -38,7 +38,6 @@ public class Consumo {
     private Float kWh;
 
     // Getter, Setter y otros métodos según tus necesidades
-    / Getter y Setter para idConsumo
     public Long getIdConsumo() {
         return idConsumo;
     }

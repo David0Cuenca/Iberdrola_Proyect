@@ -2,18 +2,18 @@ import javax.persistence.*;
 import java.util.Date;
 
 @Entity
-public class ClienteActivo {
+public class ClienteBorrado {
     @Id
     private String dni;
-    private Date fechaAlta;
+    private Date fechaBaja;
 
     @OneToOne
     @MapsId
     @JoinColumn(name = "dni")
     private Cliente cliente;
 
-     // Getter y Setter para dni
-     public String getDni() {
+    // Getter y Setter para dni
+    public String getDni() {
         return dni;
     }
 
@@ -21,13 +21,13 @@ public class ClienteActivo {
         this.dni = dni;
     }
 
-    // Getter y Setter para fechaAlta
-    public Date getFechaAlta() {
-        return fechaAlta;
+    // Getter y Setter para fechaBaja
+    public Date getFechaBaja() {
+        return fechaBaja;
     }
 
-    public void setFechaAlta(Date fechaAlta) {
-        this.fechaAlta = fechaAlta;
+    public void setFechaBaja(Date fechaBaja) {
+        this.fechaBaja = fechaBaja;
     }
 
     // Getter y Setter para cliente
@@ -41,10 +41,11 @@ public class ClienteActivo {
 
     @Override
     public String toString() {
-        return "ClienteActivo{" +
+        return "ClienteBorrado{" +
                 "dni='" + dni + '\'' +
-                ", fechaAlta=" + fechaAlta +
+                ", fechaBaja=" + fechaBaja +
                 ", cliente=" + cliente +
                 '}';
     }
+    
 }

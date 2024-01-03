@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { Cliente } from '../../interfaces/cliente';
 import { ClienteService } from 'app/shared/service/cliente.service';
-import { error } from 'console';
 
 @Component({
     selector: 'table-cmp',
