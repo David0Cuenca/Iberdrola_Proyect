@@ -1,3 +1,5 @@
+package main.java.com.example.myapi.controller;
+
 import com.example.myapi.model.PVPC;
 import com.example.myapi.repository.PVPCRepository;
 import org.springframework.beans.factory.annotation.Autowired;

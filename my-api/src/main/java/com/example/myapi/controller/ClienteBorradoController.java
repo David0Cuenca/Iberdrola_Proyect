@@ -1,3 +1,5 @@
+package main.java.com.example.myapi.controller;
+
 import com.example.myapi.model.ClienteBorrado;
 import com.example.myapi.repository.ClienteBorradoRepository;
 import org.springframework.beans.factory.annotation.Autowired;

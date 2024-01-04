@@ -1,3 +1,5 @@
+package main.java.com.example.myapi.controller;
+
 import com.example.myapi.model.Contador;
 import com.example.myapi.repository.ContadorRepository;
 import org.springframework.beans.factory.annotation.Autowired;

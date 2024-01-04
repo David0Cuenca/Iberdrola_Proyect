@@ -1,3 +1,5 @@
+package main.java.com.example.myapi.controller;
+
 import com.example.myapi.model.ClienteActivo;
 import com.example.myapi.repository.ClienteActivoRepository;
 import org.springframework.beans.factory.annotation.Autowired;

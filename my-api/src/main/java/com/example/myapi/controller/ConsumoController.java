@@ -1,3 +1,5 @@
+package main.java.com.example.myapi.controller;
+
 import com.example.myapi.model.Consumo;
 import com.example.myapi.repository.ConsumoRepository;
 import org.springframework.beans.factory.annotation.Autowired;

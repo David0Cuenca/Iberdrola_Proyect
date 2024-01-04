@@ -1,3 +1,5 @@
+package main.java.com.example.myapi.controller;
+
 import com.example.myapi.model.Privada;
 import com.example.myapi.repository.PrivadaRepository;
 import org.springframework.beans.factory.annotation.Autowired;

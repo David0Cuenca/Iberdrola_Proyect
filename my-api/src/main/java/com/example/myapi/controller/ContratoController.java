@@ -1,3 +1,5 @@
+package main.java.com.example.myapi.controller;
+
 import com.example.myapi.model.Contrato;
 import com.example.myapi.repository.ContratoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
